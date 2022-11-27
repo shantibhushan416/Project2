@@ -1,0 +1,63 @@
+.innerbox {
+  width: 50wh;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+
+#bullets {
+  margin-bottom: 6px;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: gold;
+  margin: 0 10px;
+}
+
+#slide2:checked ~ #bullets label:nth-child(2) {
+  background: #444;
+}
+.sample-heading {
+  border: 0.25em solid;
+  position: relative;
+  color: gold;
+}
+.sample-heading::before,
+.sample-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+.sample-heading::before {
+  top: -0.3em;
+  bottom: -0.3em;
+  left: 1em;
+  right: 1em;
+}
+.sample-heading::after {
+  left: -0.3em;
+  right: -0.3em;
+  top: 1em;
+  bottom: 1em;
+}
+.sample-heading .heading {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sample-heading.explanation::before,
+.sample-heading.explanation::after {
+  background: rgba(255, 0, 255, 0.5);
+}
