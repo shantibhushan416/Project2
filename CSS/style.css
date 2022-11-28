@@ -1,3 +1,11 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .innerbox {
   width: 50wh;
   text-align: center;
@@ -47,14 +55,6 @@
 .sample-heading .heading {
   position: relative;
   z-index: 1;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .sample-heading.explanation::before,
