@@ -32,6 +32,7 @@ body {
   border: 0.25em solid;
   position: relative;
   color: gold;
+  font-family: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 }
 .sample-heading::before,
 .sample-heading::after {
